@@ -1,0 +1,2 @@
+# Core dependency
+numpy>=1.26,<3.0

@@ -1,0 +1,1242 @@
+{
+  "schema_version": "1.0",
+  "description": "Anonymized gift preference training data. Specific item names, brands, people, IPs, and source notes have been removed.",
+  "feature_order": [
+    "interest_match",
+    "need_utility",
+    "emotional_personalization",
+    "aesthetic_confidence",
+    "selection_safety",
+    "storage_friendliness",
+    "value_fit",
+    "cat_jewelry_accessories",
+    "cat_fandom_collectibles",
+    "cat_books_stationery",
+    "cat_electronics_imaging",
+    "cat_beauty_fragrance",
+    "cat_bags_clothing",
+    "cat_daily_life"
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_001",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.65,
+        "emotional_personalization": 0.82,
+        "aesthetic_confidence": 0.95,
+        "selection_safety": 0.7,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.45,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.98
+    },
+    {
+      "sample_id": "sample_002",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.65,
+        "emotional_personalization": 0.78,
+        "aesthetic_confidence": 0.95,
+        "selection_safety": 0.7,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.45,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.97
+    },
+    {
+      "sample_id": "sample_003",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.65,
+        "emotional_personalization": 0.98,
+        "aesthetic_confidence": 0.9,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.8,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.98
+    },
+    {
+      "sample_id": "sample_004",
+      "features": {
+        "interest_match": 0.75,
+        "need_utility": 0.62,
+        "emotional_personalization": 0.7,
+        "aesthetic_confidence": 0.6,
+        "selection_safety": 0.6,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.8,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.91
+    },
+    {
+      "sample_id": "sample_005",
+      "features": {
+        "interest_match": 0.75,
+        "need_utility": 0.62,
+        "emotional_personalization": 0.68,
+        "aesthetic_confidence": 0.6,
+        "selection_safety": 0.65,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.82,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.92
+    },
+    {
+      "sample_id": "sample_006",
+      "features": {
+        "interest_match": 0.75,
+        "need_utility": 0.55,
+        "emotional_personalization": 0.62,
+        "aesthetic_confidence": 0.58,
+        "selection_safety": 0.55,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.85,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.88
+    },
+    {
+      "sample_id": "sample_007",
+      "features": {
+        "interest_match": 0.9,
+        "need_utility": 0.57,
+        "emotional_personalization": 0.72,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.65,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.65,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.9
+    },
+    {
+      "sample_id": "sample_008",
+      "features": {
+        "interest_match": 0.9,
+        "need_utility": 0.57,
+        "emotional_personalization": 0.7,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.65,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.55,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.89
+    },
+    {
+      "sample_id": "sample_009",
+      "features": {
+        "interest_match": 0.65,
+        "need_utility": 0.5,
+        "emotional_personalization": 0.65,
+        "aesthetic_confidence": 0.55,
+        "selection_safety": 0.45,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.4,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.76
+    },
+    {
+      "sample_id": "sample_010",
+      "features": {
+        "interest_match": 0.75,
+        "need_utility": 0.53,
+        "emotional_personalization": 0.62,
+        "aesthetic_confidence": 0.6,
+        "selection_safety": 0.55,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.35,
+        "cat_jewelry_accessories": 1,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.84
+    },
+    {
+      "sample_id": "sample_011",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.28,
+        "emotional_personalization": 0.85,
+        "aesthetic_confidence": 0.8,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.35,
+        "value_fit": 0.85,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.78
+    },
+    {
+      "sample_id": "sample_012",
+      "features": {
+        "interest_match": 0.15,
+        "need_utility": 0.15,
+        "emotional_personalization": 0.25,
+        "aesthetic_confidence": 0.5,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.35,
+        "value_fit": 0.85,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.35
+    },
+    {
+      "sample_id": "sample_013",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.22,
+        "emotional_personalization": 0.9,
+        "aesthetic_confidence": 0.85,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.1,
+        "value_fit": 0.65,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.86
+    },
+    {
+      "sample_id": "sample_014",
+      "features": {
+        "interest_match": 0.35,
+        "need_utility": 0.12,
+        "emotional_personalization": 0.3,
+        "aesthetic_confidence": 0.5,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.1,
+        "value_fit": 0.7,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.64
+    },
+    {
+      "sample_id": "sample_015",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.2,
+        "emotional_personalization": 0.85,
+        "aesthetic_confidence": 0.8,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.25,
+        "value_fit": 0.75,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.84
+    },
+    {
+      "sample_id": "sample_016",
+      "features": {
+        "interest_match": 0.15,
+        "need_utility": 0.09,
+        "emotional_personalization": 0.2,
+        "aesthetic_confidence": 0.5,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.25,
+        "value_fit": 0.8,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.42
+    },
+    {
+      "sample_id": "sample_017",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.33,
+        "emotional_personalization": 1.0,
+        "aesthetic_confidence": 0.95,
+        "selection_safety": 0.9,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.85,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.98
+    },
+    {
+      "sample_id": "sample_018",
+      "features": {
+        "interest_match": 0.05,
+        "need_utility": 0.08,
+        "emotional_personalization": 0.1,
+        "aesthetic_confidence": 0.4,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.5,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.2
+    },
+    {
+      "sample_id": "sample_019",
+      "features": {
+        "interest_match": 0.8,
+        "need_utility": 0.28,
+        "emotional_personalization": 0.5,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.75,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.74
+    },
+    {
+      "sample_id": "sample_020",
+      "features": {
+        "interest_match": 0.8,
+        "need_utility": 0.32,
+        "emotional_personalization": 0.55,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.75,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 1,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.78
+    },
+    {
+      "sample_id": "sample_021",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.33,
+        "emotional_personalization": 0.78,
+        "aesthetic_confidence": 0.85,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.75,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 1,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.86
+    },
+    {
+      "sample_id": "sample_022",
+      "features": {
+        "interest_match": 0.9,
+        "need_utility": 0.3,
+        "emotional_personalization": 0.7,
+        "aesthetic_confidence": 0.8,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 1,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.82
+    },
+    {
+      "sample_id": "sample_023",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.38,
+        "emotional_personalization": 0.9,
+        "aesthetic_confidence": 0.85,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.75,
+        "value_fit": 0.85,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 1,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.88
+    },
+    {
+      "sample_id": "sample_024",
+      "features": {
+        "interest_match": 0.9,
+        "need_utility": 0.35,
+        "emotional_personalization": 0.82,
+        "aesthetic_confidence": 0.8,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.75,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 1,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.84
+    },
+    {
+      "sample_id": "sample_025",
+      "features": {
+        "interest_match": 0.95,
+        "need_utility": 0.35,
+        "emotional_personalization": 0.8,
+        "aesthetic_confidence": 0.8,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 1,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.83
+    },
+    {
+      "sample_id": "sample_026",
+      "features": {
+        "interest_match": 0.3,
+        "need_utility": 0.23,
+        "emotional_personalization": 0.35,
+        "aesthetic_confidence": 0.45,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 1,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.55
+    },
+    {
+      "sample_id": "sample_027",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.38,
+        "emotional_personalization": 0.72,
+        "aesthetic_confidence": 0.8,
+        "selection_safety": 0.9,
+        "storage_friendliness": 0.85,
+        "value_fit": 0.95,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 1,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.82
+    },
+    {
+      "sample_id": "sample_028",
+      "features": {
+        "interest_match": 0.75,
+        "need_utility": 0.28,
+        "emotional_personalization": 0.6,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.9,
+        "storage_friendliness": 0.75,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 1,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.72
+    },
+    {
+      "sample_id": "sample_029",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.48,
+        "emotional_personalization": 0.75,
+        "aesthetic_confidence": 0.85,
+        "selection_safety": 0.7,
+        "storage_friendliness": 0.75,
+        "value_fit": 0.4,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 1,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.98
+    },
+    {
+      "sample_id": "sample_030",
+      "features": {
+        "interest_match": 0.95,
+        "need_utility": 0.85,
+        "emotional_personalization": 0.55,
+        "aesthetic_confidence": 0.8,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.85,
+        "value_fit": 0.65,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 1,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.94
+    },
+    {
+      "sample_id": "sample_031",
+      "features": {
+        "interest_match": 0.95,
+        "need_utility": 0.77,
+        "emotional_personalization": 0.5,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.55,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 1,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.91
+    },
+    {
+      "sample_id": "sample_032",
+      "features": {
+        "interest_match": 0.85,
+        "need_utility": 0.85,
+        "emotional_personalization": 0.35,
+        "aesthetic_confidence": 0.65,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.85,
+        "value_fit": 0.75,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 1,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.83
+    },
+    {
+      "sample_id": "sample_033",
+      "features": {
+        "interest_match": 0.6,
+        "need_utility": 0.65,
+        "emotional_personalization": 0.3,
+        "aesthetic_confidence": 0.6,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.85,
+        "value_fit": 0.65,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 1,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.68
+    },
+    {
+      "sample_id": "sample_034",
+      "features": {
+        "interest_match": 0.55,
+        "need_utility": 0.55,
+        "emotional_personalization": 0.25,
+        "aesthetic_confidence": 0.6,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.85,
+        "value_fit": 0.05,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 1,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.66
+    },
+    {
+      "sample_id": "sample_035",
+      "features": {
+        "interest_match": 0.5,
+        "need_utility": 0.28,
+        "emotional_personalization": 0.35,
+        "aesthetic_confidence": 0.6,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.1,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 1,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.5
+    },
+    {
+      "sample_id": "sample_036",
+      "features": {
+        "interest_match": 0.8,
+        "need_utility": 0.25,
+        "emotional_personalization": 0.6,
+        "aesthetic_confidence": 0.6,
+        "selection_safety": 0.9,
+        "storage_friendliness": 1.0,
+        "value_fit": 0.95,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 1,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.64
+    },
+    {
+      "sample_id": "sample_037",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.55,
+        "emotional_personalization": 0.45,
+        "aesthetic_confidence": 0.85,
+        "selection_safety": 0.7,
+        "storage_friendliness": 0.95,
+        "value_fit": 0.65,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 1,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.8
+    },
+    {
+      "sample_id": "sample_038",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.53,
+        "emotional_personalization": 0.42,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.3,
+        "storage_friendliness": 0.95,
+        "value_fit": 0.55,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 1,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.78
+    },
+    {
+      "sample_id": "sample_039",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.4,
+        "emotional_personalization": 0.4,
+        "aesthetic_confidence": 0.8,
+        "selection_safety": 0.55,
+        "storage_friendliness": 0.95,
+        "value_fit": 0.45,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 1,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.76
+    },
+    {
+      "sample_id": "sample_040",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.42,
+        "emotional_personalization": 0.45,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.2,
+        "storage_friendliness": 0.95,
+        "value_fit": 0.75,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 1,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.74
+    },
+    {
+      "sample_id": "sample_041",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.38,
+        "emotional_personalization": 0.5,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.4,
+        "storage_friendliness": 0.95,
+        "value_fit": 0.35,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 1,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.76
+    },
+    {
+      "sample_id": "sample_042",
+      "features": {
+        "interest_match": 0.35,
+        "need_utility": 0.25,
+        "emotional_personalization": 0.25,
+        "aesthetic_confidence": 0.35,
+        "selection_safety": 0.15,
+        "storage_friendliness": 0.95,
+        "value_fit": 0.1,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 1,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.45
+    },
+    {
+      "sample_id": "sample_043",
+      "features": {
+        "interest_match": 0.9,
+        "need_utility": 0.5,
+        "emotional_personalization": 0.3,
+        "aesthetic_confidence": 0.8,
+        "selection_safety": 0.65,
+        "storage_friendliness": 0.95,
+        "value_fit": 0.75,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 1,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.7
+    },
+    {
+      "sample_id": "sample_044",
+      "features": {
+        "interest_match": 0.35,
+        "need_utility": 0.4,
+        "emotional_personalization": 0.2,
+        "aesthetic_confidence": 0.35,
+        "selection_safety": 0.15,
+        "storage_friendliness": 0.95,
+        "value_fit": 0.5,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 1,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.45
+    },
+    {
+      "sample_id": "sample_045",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.62,
+        "emotional_personalization": 0.62,
+        "aesthetic_confidence": 0.9,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.25,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 1,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.95
+    },
+    {
+      "sample_id": "sample_046",
+      "features": {
+        "interest_match": 0.85,
+        "need_utility": 0.6,
+        "emotional_personalization": 0.55,
+        "aesthetic_confidence": 0.7,
+        "selection_safety": 0.6,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.3,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 1,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.86
+    },
+    {
+      "sample_id": "sample_047",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.62,
+        "emotional_personalization": 0.62,
+        "aesthetic_confidence": 0.9,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.25,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 1,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.93
+    },
+    {
+      "sample_id": "sample_048",
+      "features": {
+        "interest_match": 0.55,
+        "need_utility": 0.53,
+        "emotional_personalization": 0.3,
+        "aesthetic_confidence": 0.45,
+        "selection_safety": 0.55,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.05,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 1,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.56
+    },
+    {
+      "sample_id": "sample_049",
+      "features": {
+        "interest_match": 0.55,
+        "need_utility": 0.62,
+        "emotional_personalization": 0.45,
+        "aesthetic_confidence": 0.5,
+        "selection_safety": 0.25,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.75,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 1,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.64
+    },
+    {
+      "sample_id": "sample_050",
+      "features": {
+        "interest_match": 0.55,
+        "need_utility": 0.62,
+        "emotional_personalization": 0.4,
+        "aesthetic_confidence": 0.5,
+        "selection_safety": 0.25,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.7,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 1,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.66
+    },
+    {
+      "sample_id": "sample_051",
+      "features": {
+        "interest_match": 0.8,
+        "need_utility": 0.33,
+        "emotional_personalization": 0.35,
+        "aesthetic_confidence": 0.7,
+        "selection_safety": 0.55,
+        "storage_friendliness": 0.85,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 1,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.52
+    },
+    {
+      "sample_id": "sample_052",
+      "features": {
+        "interest_match": 0.15,
+        "need_utility": 0.17,
+        "emotional_personalization": 0.2,
+        "aesthetic_confidence": 0.45,
+        "selection_safety": 0.6,
+        "storage_friendliness": 0.85,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 1,
+        "cat_daily_life": 0
+      },
+      "target_liking": 0.28
+    },
+    {
+      "sample_id": "sample_053",
+      "features": {
+        "interest_match": 0.85,
+        "need_utility": 0.25,
+        "emotional_personalization": 0.35,
+        "aesthetic_confidence": 0.7,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.95,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 1
+      },
+      "target_liking": 0.7
+    },
+    {
+      "sample_id": "sample_054",
+      "features": {
+        "interest_match": 0.1,
+        "need_utility": 0.1,
+        "emotional_personalization": 0.1,
+        "aesthetic_confidence": 0.45,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.95,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 1
+      },
+      "target_liking": 0.28
+    },
+    {
+      "sample_id": "sample_055",
+      "features": {
+        "interest_match": 1.0,
+        "need_utility": 0.23,
+        "emotional_personalization": 0.35,
+        "aesthetic_confidence": 0.75,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.95,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 1
+      },
+      "target_liking": 0.74
+    },
+    {
+      "sample_id": "sample_056",
+      "features": {
+        "interest_match": 0.6,
+        "need_utility": 0.15,
+        "emotional_personalization": 0.78,
+        "aesthetic_confidence": 0.6,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.7,
+        "value_fit": 0.85,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 1
+      },
+      "target_liking": 0.66
+    },
+    {
+      "sample_id": "sample_057",
+      "features": {
+        "interest_match": 0.6,
+        "need_utility": 0.62,
+        "emotional_personalization": 0.3,
+        "aesthetic_confidence": 0.55,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.75,
+        "value_fit": 0.85,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 1
+      },
+      "target_liking": 0.64
+    },
+    {
+      "sample_id": "sample_058",
+      "features": {
+        "interest_match": 0.85,
+        "need_utility": 0.25,
+        "emotional_personalization": 0.6,
+        "aesthetic_confidence": 0.65,
+        "selection_safety": 0.8,
+        "storage_friendliness": 0.65,
+        "value_fit": 0.9,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 1
+      },
+      "target_liking": 0.72
+    },
+    {
+      "sample_id": "sample_059",
+      "features": {
+        "interest_match": 0.5,
+        "need_utility": 0.3,
+        "emotional_personalization": 0.25,
+        "aesthetic_confidence": 0.55,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.8,
+        "value_fit": 0.65,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 1
+      },
+      "target_liking": 0.44
+    },
+    {
+      "sample_id": "sample_060",
+      "features": {
+        "interest_match": 0.5,
+        "need_utility": 0.33,
+        "emotional_personalization": 0.25,
+        "aesthetic_confidence": 0.55,
+        "selection_safety": 0.75,
+        "storage_friendliness": 0.75,
+        "value_fit": 0.55,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 1
+      },
+      "target_liking": 0.43
+    },
+    {
+      "sample_id": "sample_061",
+      "features": {
+        "interest_match": 0.1,
+        "need_utility": 0.57,
+        "emotional_personalization": 0.2,
+        "aesthetic_confidence": 0.6,
+        "selection_safety": 0.85,
+        "storage_friendliness": 0.9,
+        "value_fit": 0.85,
+        "cat_jewelry_accessories": 0,
+        "cat_fandom_collectibles": 0,
+        "cat_books_stationery": 0,
+        "cat_electronics_imaging": 0,
+        "cat_beauty_fragrance": 0,
+        "cat_bags_clothing": 0,
+        "cat_daily_life": 1
+      },
+      "target_liking": 0.1
+    }
+  ]
+}
