@@ -405,16 +405,6 @@ Reloaded predictions match: True
 - 决定 14 维特征结构、模型用途和最终展示方式。
 - 对 AI 辅助生成的内容进行审阅、修改、测试和最终取舍。
 
-#### 梦话 (Elina)
-
-数据支持与偏好信息提供者。
-
-- 提供礼物偏好、类别倾向、需求、审美、选择风险和预算相关的原始信息。
-- 为训练数据建立提供真实语境和偏好依据。
-- 使项目能够围绕具体送礼场景构造初始样本与评分规则。
-
-模型不代表 Elina 对所有礼物的固定或永久评价。偏好可能随时间、情境和需求变化。
-
 #### ChatGPT (OpenAI)
 
 AI 开发辅助、数据整理与文档支持。
@@ -631,13 +621,6 @@ Creator and primary developer.
 - Designed the core architecture and implemented most of the code.
 - Implemented the NumPy neural network, backpropagation, training loop, validation workflow, baseline comparison, project integration, and bilingual interaction flow.
 - Reviewed, modified, tested, and approved AI-assisted content.
-
-#### Elina
-
-Preference-data contributor and source-context provider.
-
-- Supplied original preference information, practical needs, aesthetic considerations, selection risks, and budget context.
-- Provided the real-world basis for the initial samples and scoring logic.
 
 #### ChatGPT (OpenAI)
 
