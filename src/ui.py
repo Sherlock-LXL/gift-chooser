@@ -5,13 +5,10 @@ except ImportError:
     msvcrt = None
 
 def show_splash() -> None:
-    print("=" * 68)
+    print("=" * 30)
     print("送礼选择器 / Gift Chooser")
-    print(
-        "由李湘伦 (Sherlock Lee) 制作 | "
-        "特别鸣谢梦话老师 (Elina) 提供数据支持"
-    )
-    print("=" * 68)
+    print("由李湘伦 (Sherlock Lee) 制作")
+    print("=" * 30)
     print()
 
 TEXT = {
