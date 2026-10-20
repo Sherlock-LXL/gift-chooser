@@ -1,5 +1,5 @@
-from gift_chooser.data import X, y
-from gift_chooser.validation import cross_validate
+from src.data import X, y
+from src.validation import cross_validate
 
 def main():
     results = cross_validate(X, y)

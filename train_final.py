@@ -1,8 +1,8 @@
 from pathlib import Path
 import numpy as np
 
-from gift_chooser.data import X, y
-from gift_chooser.model import (
+from src.data import X, y
+from src.model import (
     train,
     predict,
     mse_loss,

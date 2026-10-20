@@ -122,7 +122,7 @@ gift-chooser/
 │  └─ generate_training_data_prompt.md
 ├─ data/
 │  └─ training_data.json
-└─ gift_chooser/
+└─ src/
    ├─ __init__.py
    ├─ config.py
    ├─ data.py
@@ -525,7 +525,7 @@ gift-chooser/
 │  └─ generate_training_data_prompt.md
 ├─ data/
 │  └─ training_data.json
-└─ gift_chooser/
+└─ src/
    ├─ __init__.py
    ├─ config.py
    ├─ data.py

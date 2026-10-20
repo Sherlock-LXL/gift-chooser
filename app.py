@@ -1,8 +1,8 @@
 from pathlib import Path
 import numpy as np
 
-from gift_chooser.model import load_model, predict
-from gift_chooser.ui import (
+from src.model import load_model, predict
+from src.ui import (
     collect_input,
     show_splash,
     show_result,
