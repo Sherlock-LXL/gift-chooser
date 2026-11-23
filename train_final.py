@@ -10,11 +10,8 @@ from src.model import (
     load_model,
 )
 
-MODEL_PATH = (
-    Path(__file__).resolve().parent
-    / "models"
-    / "final_model.npz"
-)
+MODEL_PATH = Path(__file__).resolve().parent / "models" / "final_model.npz"
+
 
 def main() -> None:
     print("Training final model...")
@@ -49,9 +46,8 @@ def main() -> None:
     print(f"Model saved to: {MODEL_PATH}")
     print(f"Reloaded predictions match: {predictions_match}")
     if not predictions_match:
-        raise RuntimeError(
-            "Predictions changed after saving and loading the model."
-        )
+        raise RuntimeError("Predictions changed after saving and loading the model.")
+
 
 if __name__ == "__main__":
     main()

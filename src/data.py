@@ -25,6 +25,7 @@ FEATURE_ORDER: tuple[str, ...] = (
 CONTINUOUS_FEATURES = FEATURE_ORDER[:7]
 CATEGORY_FEATURES = FEATURE_ORDER[7:]
 
+
 def _read_finite_number(value: object, *, field: str, sample_id: str) -> float:
     if isinstance(value, bool) or not isinstance(value, (int, float)):
         raise ValueError(f"{sample_id}: {field} must be a JSON number.")
@@ -32,6 +33,7 @@ def _read_finite_number(value: object, *, field: str, sample_id: str) -> float:
     if not np.isfinite(number):
         raise ValueError(f"{sample_id}: {field} must be finite.")
     return number
+
 
 def load_dataset(
     json_path: str | Path,
@@ -73,31 +75,23 @@ def load_dataset(
         extra = [name for name in features if name not in FEATURE_ORDER]
         if missing or extra:
             raise ValueError(
-                f"{sample_id}: feature keys mismatch; "
-                f"missing={missing}, extra={extra}"
+                f"{sample_id}: feature keys mismatch; missing={missing}, extra={extra}"
             )
         row: list[float] = []
         for name in CONTINUOUS_FEATURES:
-            value = _read_finite_number(
-                features[name], field=name, sample_id=sample_id
-            )
+            value = _read_finite_number(features[name], field=name, sample_id=sample_id)
             if not 0.0 <= value <= 1.0:
-                raise ValueError(
-                    f"{sample_id}: {name}={value} is outside [0, 1]."
-                )
+                raise ValueError(f"{sample_id}: {name}={value} is outside [0, 1].")
             row.append(value)
         category_values: list[int] = []
         for name in CATEGORY_FEATURES:
             raw_value = features[name]
             if isinstance(raw_value, bool) or raw_value not in (0, 1):
-                raise ValueError(
-                    f"{sample_id}: {name} must be exactly 0 or 1."
-                )
+                raise ValueError(f"{sample_id}: {name} must be exactly 0 or 1.")
             category_values.append(int(raw_value))
         if sum(category_values) != 1:
             raise ValueError(
-                f"{sample_id}: category features must be one-hot; "
-                f"found sum={sum(category_values)}."
+                f"{sample_id}: category features must be one-hot; found sum={sum(category_values)}."
             )
         row.extend(float(value) for value in category_values)
         target = _read_finite_number(
@@ -106,9 +100,7 @@ def load_dataset(
             sample_id=sample_id,
         )
         if not 0.0 <= target <= 1.0:
-            raise ValueError(
-                f"{sample_id}: target_liking={target} is outside [0, 1]."
-            )
+            raise ValueError(f"{sample_id}: target_liking={target} is outside [0, 1].")
         rows.append(row)
         targets.append(target)
         sample_ids.append(sample_id)
@@ -117,13 +109,10 @@ def load_dataset(
     expected_x_shape = (len(samples), len(FEATURE_ORDER))
     expected_y_shape = (len(samples), 1)
     if X.shape != expected_x_shape:
-        raise RuntimeError(
-            f"Unexpected X shape: {X.shape}; expected {expected_x_shape}."
-        )
+        raise RuntimeError(f"Unexpected X shape: {X.shape}; expected {expected_x_shape}.")
     if y.shape != expected_y_shape:
-        raise RuntimeError(
-            f"Unexpected y shape: {y.shape}; expected {expected_y_shape}."
-        )
+        raise RuntimeError(f"Unexpected y shape: {y.shape}; expected {expected_y_shape}.")
     return X, y, sample_ids
+
 
 X, y, sample_ids = load_dataset(DATA_PATH)

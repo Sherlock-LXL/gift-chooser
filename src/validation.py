@@ -12,15 +12,14 @@ from .model import (
     mse_loss,
 )
 
+
 def make_folds(
     sample_count: int,
     num_folds: int = NUM_FOLDS,
     seed: int = SEED,
 ) -> list[np.ndarray]:
     if num_folds < 2:
-        raise ValueError(
-            f"num_folds must be at least 2, got {num_folds}."
-        )
+        raise ValueError(f"num_folds must be at least 2, got {num_folds}.")
     if sample_count < num_folds:
         raise ValueError(
             f"Five-fold cross-validation requires at least "
@@ -31,6 +30,7 @@ def make_folds(
     rng.shuffle(index)
     folds = np.array_split(index, num_folds)
     return folds
+
 
 def mae_loss(
     prediction: np.ndarray,
@@ -45,6 +45,7 @@ def mae_loss(
             total_loss += np.abs(prediction[i, j] - target[i, j])
     return total_loss / prediction.size
 
+
 def baseline_mae(
     y_train: np.ndarray,
     y_val: np.ndarray,
@@ -54,24 +55,19 @@ def baseline_mae(
     loss_mean = mae_loss(y_mean, y_val)
     return loss_mean
 
+
 def evaluate_one_fold(
     X: np.ndarray,
     y: np.ndarray,
     folds: list[np.ndarray],
     fold_number: int,
     steps: int,
-    learning_rate: float=LEARNING_RATE,
-    seed: int=SEED,
+    learning_rate: float = LEARNING_RATE,
+    seed: int = SEED,
 ) -> dict[str, float | int]:
     if not 0 <= fold_number < len(folds):
-        raise ValueError(
-            f"fold_number must be between 0 and {len(folds) - 1}."
-        )
-    train_index = np.concatenate([
-        fold
-        for i, fold in enumerate(folds)
-        if i != fold_number
-    ])
+        raise ValueError(f"fold_number must be between 0 and {len(folds) - 1}.")
+    train_index = np.concatenate([fold for i, fold in enumerate(folds) if i != fold_number])
     val_index = folds[fold_number]
     X_train = X[train_index, :]
     y_train = y[train_index, :]
@@ -98,6 +94,7 @@ def evaluate_one_fold(
         "baseline_val_mae": baseline_val_mae,
     }
 
+
 def cross_validate(
     X: np.ndarray,
     y: np.ndarray,
@@ -123,28 +120,16 @@ def cross_validate(
             seed=seed,
         )
         fold_results.append(result)
-    train_mse_values = np.array([
-        result["train_mse"]
-        for result in fold_results
-    ])
+    train_mse_values = np.array([result["train_mse"] for result in fold_results])
     mean_train_mse = np.mean(train_mse_values)
     std_train_mse = np.std(train_mse_values)
-    val_mse_values = np.array([
-        result["val_mse"]
-        for result in fold_results
-    ])
+    val_mse_values = np.array([result["val_mse"] for result in fold_results])
     mean_val_mse = np.mean(val_mse_values)
     std_val_mse = np.std(val_mse_values)
-    val_mae_values = np.array([
-        result["val_mae"]
-        for result in fold_results
-    ])
+    val_mae_values = np.array([result["val_mae"] for result in fold_results])
     mean_val_mae = np.mean(val_mae_values)
     std_val_mae = np.std(val_mae_values)
-    baseline_val_mae_values = np.array([
-        result["baseline_val_mae"]
-        for result in fold_results
-    ])
+    baseline_val_mae_values = np.array([result["baseline_val_mae"] for result in fold_results])
     mean_baseline_val_mae = np.mean(baseline_val_mae_values)
     std_baseline_val_mae = np.std(baseline_val_mae_values)
     return {
